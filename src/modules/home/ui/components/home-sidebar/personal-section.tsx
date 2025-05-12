@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link";
 
-import { SidebarGroup, SidebarGroupContent, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from "@/components/ui/sidebar";
+import { SidebarGroup, SidebarGroupContent, SidebarGroupLabel, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from "@/components/ui/sidebar";
 import { History, ListVideoIcon, ThumbsUpIcon } from "lucide-react";
 
 const items = [
@@ -29,6 +29,7 @@ const items = [
 export const PersonalSection = () =>{
     return(
         <SidebarGroup>
+            <SidebarGroupLabel>You</SidebarGroupLabel>
             <SidebarGroupContent>
                 <SidebarMenu>
                     {items.map((item) => (
